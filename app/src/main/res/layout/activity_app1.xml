@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="110dp"
+            android:src="@drawable/login_image1" />
+
+        <TextView
+            android:id="@+id/ssuweatherfit_korea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/nanumneurisneurisce"
+            android:text="슈웨더핏"
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textSize="85dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ssuweatherfit_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/nanumneurisneurisce"
+            android:text="SSUWeatherFit"
+            android:textColor="#a6a6a6"
+            android:textSize="35dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/login_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="103dp"
+            android:fontFamily="@font/nanumneurisneurisce"
+            android:text="ID"
+            android:textColor="#5e5e5e"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/login_edit_id"
+            android:layout_width="225dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="30dp"
+            android:hint="  아이디를 입력하세요"
+            android:textSize="17dp"
+            android:textColorHint="#d5d5d5"
+            android:inputType="text"
+            android:background="@drawable/round_edittext"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/login_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:fontFamily="@font/nanumneurisneurisce"
+                android:gravity="center"
+                android:text="PASSWORD"
+                android:textAlignment="center"
+                android:textColor="#5e5e5e"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/login_edit_password"
+                android:layout_width="225dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="30dp"
+                android:hint="  비밀번호를 입력하세요"
+                android:textSize="17dp"
+                android:textColorHint="#d5d5d5"
+                android:inputType="textPassword"
+                android:background="@drawable/round_edittext"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:gravity="right">
+
+        <Button
+            android:layout_width="226dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="150dp"
+            android:text="로그인"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:background="@drawable/main_login_btn"
+            android:fontFamily="@font/nanumneurisneurisce"/>
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:text="회원가입 하기"
+            android:textColor="#747474"
+            android:textSize="30dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/nanumneurisneurisce"
+            android:background="@drawable/main_signup_btn"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

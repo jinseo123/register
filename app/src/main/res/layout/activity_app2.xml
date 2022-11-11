@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:columnCount="3"
+    tools:context=".app_2Activity">
+
+    <TextView
+        android:id="@+id/singup_title"
+        android:text="회원가입"
+        android:fontFamily="@font/nanumneurisneurisce"
+        android:layout_marginTop="13dp"
+        android:textSize="55dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"/>
+
+    <TextView
+        android:id="@+id/signup_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumneurisneurisce"
+        android:text="이름"
+        android:textColor="#5e5e5e"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:id="@+id/signup_edit_name"
+        android:layout_width="225dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="30dp"
+        android:hint="  이름을 입력하세요"
+        android:textSize="17dp"
+        android:layout_columnSpan="2"
+        android:textColorHint="#d5d5d5"
+        android:inputType="text"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/round_edittext"/>
+
+    <TextView
+        android:id="@+id/signup_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumneurisneurisce"
+        android:gravity="center"
+        android:text="아이디"
+        android:textColor="#5e5e5e"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/signup_edit_id"
+        android:layout_width="225dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_edittext"
+        android:hint="  아이디를 입력하세요"
+        android:inputType="textPassword"
+        android:textColorHint="#d5d5d5"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/signup_btn_doublecheck"
+        android:layout_height="30dp"
+        android:text="중복체크"
+        android:layout_column="1"
+        android:layout_gravity="right"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/nanumneurisneurisce"
+        android:textSize="25dp"
+        android:background="@drawable/app_2_doublecheck_btn" />
+
+    <TextView
+        android:id="@+id/signup_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="4"
+        android:fontFamily="@font/nanumneurisneurisce"
+        android:gravity="center"
+        android:text="비밀번호"
+        android:textColor="#5e5e5e"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/signup_edit_password"
+        android:layout_width="225dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_edittext"
+        android:hint="  비밀번호를 입력하세요"
+        android:inputType="textPassword"
+        android:textColorHint="#d5d5d5"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/signup_edit_repassword"
+        android:layout_width="225dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="4dp"
+        android:layout_column="1"
+        android:background="@drawable/round_edittext"
+        android:hint="  비밀번호를 다시 입력하세요"
+        android:inputType="textPassword"
+        android:textColorHint="#d5d5d5"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/signup_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumneurisneurisce"
+        android:text="닉네임"
+        android:textColor="#5e5e5e"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_column="0"
+        android:layout_row="6"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="45dp"/>
+
+    <EditText
+        android:id="@+id/signup_edit_nickname"
+        android:layout_width="225dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="30dp"
+        android:hint="  닉네임을 입력하세요"
+        android:layout_columnSpan="2"
+        android:textSize="17dp"
+        android:textColorHint="#d5d5d5"
+        android:inputType="text"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_edittext"/>
+
+    <TextView
+        android:id="@+id/signup_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumneurisneurisce"
+        android:text="지역"
+        android:textColor="#5e5e5e"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_column="0"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="50dp"/>
+
+    <Button
+        android:id="@+id/singup_local_choosebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:text="지역 선택"/>
+
+    <TextView
+        android:id="@+id/signup_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumneurisneurisce"
+        android:text="나이"
+        android:textColor="#5e5e5e"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_column="0"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="50dp"/>
+
+    <Button
+        android:id="@+id/singup_age_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="나이 선택"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/signup_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumneurisneurisce"
+        android:text="성별"
+        android:textColor="#5e5e5e"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_column="0"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="50dp"/>
+
+    <RadioGroup
+        android:id="@+id/singup_gender_radiogroup"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <RadioButton
+            android:id="@+id/signup_radiobutton_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="남성"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/nanumneurisneurisce"
+            android:textSize="30dp" />
+
+        <RadioButton
+            android:id="@+id/signup_radiobutton_female"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="여성"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/nanumneurisneurisce"
+            android:textSize="30dp"
+            android:layout_marginLeft="60dp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/signup_btn_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="회원가입"
+        android:layout_column="1"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nanumneurisneurisce"
+        android:textSize="30dp"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="center"
+        android:background="@drawable/app_2_doublecheck_btn" />
+
+</GridLayout>
